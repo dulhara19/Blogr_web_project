@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    height: 200vh;
+}
+header{
+    background-color:  hsl(356, 100%, 66%);
+    background-image: url(/images/bg-pattern-intro-desktop.svg);
+    background-position:1rem;
+    background-size: cover;
+    position: absolute;
+    max-height: 60vh;
+    width: 100%;
+    border-radius:0 0 0 100px ;
+}
+nav{
+   /* border: 2px solid blue; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.logo{
+   margin:0 1.5em ;
+}
+.nav-links ul{
+    display:flex;
+    list-style: none;
+}
+.nav-links ul li{
+    padding: 0em 2rem;
+    margin-top: 0.7rem;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-family:arial;
+    font-weight: bold;
+    color: white;
+}
+.nav-links ul li a:hover{
+    color: rgb(156, 58, 58);
+}
+.login-signup{
+   /* border: 1px solid green; */
+    display: flex;
+    place-items: center;
+}
+.login-signup a{
+    text-decoration: none;
+    margin-right: 25px;
+    color: hsl(356, 100%, 66%);
+    font-family: arial;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 1em;
+    border-radius: 20px;
+}
+.login-signup a:hover{
+    background-color: rgb(255, 176, 176);
+    color: black;
+}
+.header-textbox{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin: 5em 5em;
+    min-height: 300px;
+   /* border: 2px solid rgb(0, 0, 255); */
+}
+.header-textbox h1,p{
+    text-align: center;
+}
+.header-textbox h1{
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.header-textbox p{
+    color: rgb(255, 217, 217);
+    padding-top: 20px;
+}
+.header-textbox-2btns{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   /* border: 2px solid black; */
+    margin-top: 2em; 
+
+}
+.header-textbox-2btns a{
+    text-decoration: none;
+    margin-right: 25px;
+    color: hsl(356, 100%, 66%);
+    font-family: arial;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 1em;
+    border-radius: 20px;
+}
+.header-textbox-2btns a:hover{
+    background-color: rgb(255, 176, 176);
+    color: black;
+}
