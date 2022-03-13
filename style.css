@@ -18,13 +18,14 @@ header{
     border-radius:0 0 0 100px ;
 }
 nav{
-   /* border: 2px solid blue; */
+  /*  border: 2px solid blue; */ 
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 2rem;
 }
 .logo{
+   height: 2.5em;
    margin:0 1.5em ;
 }
 .nav-links ul{
@@ -32,6 +33,7 @@ nav{
     list-style: none;
 }
 .nav-links ul li{
+  /*  border: 1px solid black; */
     padding: 0em 2rem;
     margin-top: 0.7rem;
 }
@@ -44,6 +46,37 @@ nav{
 .nav-links ul li a:hover{
     color: rgb(156, 58, 58);
 }
+
+/*======================= SUB-MENU======================== */
+
+.sub-menu-1{
+    position: absolute; /* this is not important because this note displayed in here. reason=display:none; */
+    display: none;
+}
+.nav-links ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    padding: 20px 0px;
+    margin-left: 0px;
+    z-index: 1;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+.nav-links ul li:hover .sub-menu-1 ul li{
+    padding: 2px 2rem;
+  /*  border-bottom: none; */ /*this is hover the submenu border bottom raw*/
+}
+.sub-menu-1 ul li a:hover{
+    color: hsl(356, 100%, 66%);
+  /*  border-bottom: 1px solid hsl(356, 100%, 66%) ; */ /*this is hover the submenu border bottom raw*/
+}
+
+
+/* ======================SUB-MENU========================*/
+
+
 .login-signup{
    /* border: 1px solid green; */
     display: flex;
