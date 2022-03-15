@@ -246,3 +246,38 @@ nav{
     font-family: arial;
     line-height: 1.7em;
 }
+footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+   /*border-radius: 0 70px 0 0; */ 
+    background-image: linear-gradient(rgb(0, 0, 0) 20px 10px ,hsl(356, 100%, 66%));
+    overflow: hidden;
+}
+.footer-logo{
+    margin: 8rem;
+}
+.row{
+    margin: 6em;
+}
+.row h3{
+    color: wheat;
+    font-family: monospace;
+    font-size: 16px;
+}
+.row ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.row ul li{
+    margin-top: 10px;
+}
+.row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}
+.row ul li a:hover{
+    color: hotpink;
+}
